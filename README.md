@@ -1,13 +1,25 @@
-# Arduinos de mi ❤️‍🔥
+# Arduinos de mi ❤️‍🔥 <!-- omit from toc -->
 
-## LED
+Un libro de recetas para interactuar con Arduino en el explorador.
+
+## Tabla de contenido <!-- omit from toc -->
+
+- [Programas básicos de Arduino](#programas-básicos-de-arduino)
+  - [LED](#led)
+  - [LED + Botón](#led--botón)
+  - [LED + Potenciometro](#led--potenciometro)
+- [Arduino para controlar la `Web`](#arduino-para-controlar-la-web)
+
+## Programas básicos de Arduino
+
+### LED
 
 Materiales:
 
 - 1 LED
 - 1 resistencia de 220 Ohm.
 
-![Conexión de LED al Arduino](led.png)
+![Conexión de LED al Arduino](documentacion/led.png)
 
 ```cpp
 int pinLed = 13;
@@ -24,7 +36,7 @@ void loop() {
 }
 ```
 
-## LED + Botón
+### LED + Botón
 
 Materiales:
 
@@ -32,12 +44,12 @@ Materiales:
 - 1 LED
 - 1 Botón
 
-![Conexión de botón y LED al Arduino](boton.webp)
+![Conexión de botón y LED al Arduino](documentacion/boton.webp)
 
 ```cpp
 int pinBoton = 2;
 int pinLed = 3;
- 
+
 void setup() {
   Serial.begin(9600);
   pinMode(pinLed, OUTPUT);
@@ -58,7 +70,7 @@ void loop() {
 }
 ```
 
-## LED + Potenciometro
+### LED + Potenciometro
 
 Materiales:
 
@@ -66,12 +78,12 @@ Materiales:
 - 1 LED
 - 1 resistencia de 220 Ohm
 
-![Conexión de potenciómetro y LED al Arduino](pot.webp)
+![Conexión de potenciómetro y LED al Arduino](documentacion/Led+pot_bb.png)
 
 ```cpp
 int pinPot = A0;
 int pinLed = 11;
- 
+
 void setup() {
   Serial.begin(9600);
   pinMode(pinLed, OUTPUT);
@@ -87,3 +99,5 @@ void loop() {
   delay(20);
 }
 ```
+
+## Arduino para controlar la `Web`
